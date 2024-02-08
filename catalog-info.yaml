@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "mypythonapplication0208"
+
+  links:
+    - url: https://github.com/RohanAwasthi/aws-elasticbeanstalk-20240208120055
+      title: "mypythonapplication0208"
+      icon: code
+
+  labels:
+    system: web-apps
+    trackid: "aws-elasticbeanstalk-20240208120055"
+    environmentname: mypythonenb02081
+
+  tags:
+    - python
+    - aws
+    - "applicationtype-webapplication"
+
+  annotations:
+    # add elastic beanstalk annotation
+    jenkins.io/github-folder: 'custom-actions/tf-mypythonapplication0208'
+    github.com/project-slug: RohanAwasthi/aws-elasticbeanstalk-20240208120055
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/linguist: https://github.com/ItRachii/ebs-sample-python-application
+    sonarqube.org/project-key: 'python-app/aws-elb-python'
+
+spec:
+  type: service
+  lifecycle: experimental
+  system: elasticbeanstalk
+  owner: "group:default/ey"
